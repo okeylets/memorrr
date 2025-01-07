@@ -1,7 +1,11 @@
+python app.py
+pip install Flask flask-cors gTTS
 from flask import Flask, request, send_file, render_template, jsonify
 from flask_cors import CORS
 from gtts import gTTS
 from io import BytesIO
+
+
 
 app = Flask(__name__)
 CORS(app)
